@@ -14,7 +14,7 @@ public class MaPremiereConnexion
         try
         {
             // create a database connection by specifying an absolute or relative path for SQLite, or the server address otherwise
-            connection = DriverManager.getConnection("jdbc:sqlite:/home/erodrigu/Java/TP4GL/src/main/resources/banque.db");
+            connection = DriverManager.getConnection("jdbc:sqlite:src/main/resources/banque.db");
             Statement statement = connection.createStatement();
             statement.setQueryTimeout(30);  // set timeout to 30 sec.
 
